@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Música </title>
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <link href="img-entrete/icone-logo.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img-entrete/Logo.png"></a>
+        </div>
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active"> Notícias </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Política </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Esportes </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html"> Entretenimento </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Economia </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Tecnologia </a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="mainnot">
+        <div id="noticias">
+            <h1> Música </h1>
+
+            <h2>Shallow Now: Luan achou refrão brega e diz que sugeriu "juntos até o final"</h2>
+
+            <img src="img-entrete/Musica 2.png" title="Música 2" alt="Foto de Luan Santana">
+            <p class="data">23/08/2019 12h55</p>
+            <p>
+                Três meses depois do lançamento de Juntos, parceria de Paula Fernandes e Luan Santana, o controverso
+                trecho em inglês da canção continua rendendo. O cantor, que lançou ontem o seu DVD Viva, não escapou das
+                perguntas sobre a música, que inclusive entrou recentemente na trilha sonora de Bom Sucesso, novela das
+                sete da Globo.
+            </p>
+            <p>
+                Luan não se ofendeu com os comentários na internet, pelo contrário. "Os comentários foram até
+                saudáveis", disse em entrevista ao UOL. O que não agradou o parceiro de Paula Fernandes foi mesmo o
+                trecho que virou meme.
+            </p>
+            <p>
+                "Cheguei a falar pra ela quando recebi: 'Paula, esse 'shallow now' está soando um pouco diferente, meio
+                ruim. Me soou meio brega assim, sei lá. Soou ruim, não entrou no meu ouvido. Aí falei: vamos trocar essa
+                partezinha", relembrou. "
+            </p>
+            <p>
+                A música estava tão linda. Não achei que valia a pena sacrificar por causa do final, de uma frase. Dava
+                pra trocar, tinha um monte de coisa que dava pra por". Para Luan, "juntos até o final" teria sido a
+                melhor solução para substituir "shallow now".
+            </p>
+            <p>
+                Paula Fernandes não quis mudar Juntos, pois a versão com o "shallow now" já estava aprovada por Lady
+                Gaga. Uma segunda aprovação da compositora da canção original poderia atrasar o lançamento da música.
+            </p>
+            <p>
+                Por não ter participado da adaptação da letra para o português, Luan Santana gravou a voz dele em
+                estúdio e acatou a decisão da parceira.
+            </p>
+            <p>
+                "É uma questão de fonética, de como soava. Eu senti isso quando recebi a música da Paula, é composição
+                dela. Mas quando a composição é de outra pessoa a gente fica meio assim de dar pitaco.".
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <img id="logo-rodape" src="img-entrete/Logo.png">
+        <div class="rodape">
+            <address>
+                <ul>
+                    <li><img src="img-entrete/Facebook.png"></li>
+                    <li><img src="img-entrete/Instagram.png"></li>
+                    <li><img src="img-entrete/Twitter.png"></li>
+                </ul>
+            </address>
+            <p>Direitos autorais reservados</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }                
+    </script>
+
+
+</body>
+
+</html>

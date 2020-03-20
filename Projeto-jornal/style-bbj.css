@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gandhi Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Cambria';
+    font-size: 1.8em;
+    padding: 3em 0 0 0;
+}
+
+h1 {
+    display: none;
+}
+
+h3 {
+    font-size: 1.3em;
+    padding: 2em 0 1em 0;
+}
+
+section > a {
+    text-decoration: none;
+    color: #000;
+}
+
+/**********************************************
+                    NAV 
+**********************************************/
+
+nav {
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+nav > ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    list-style-type: none;
+    padding: 1em 0 1em 0;
+}
+nav li {
+    font-size: 1.3em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+form input#pesquisa {
+    width: 85%;
+    height: 27px;
+    border: 2px solid black;
+    text-align: left;
+    padding: 0 2px;
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+/**********************************************
+                    NAV 
+**********************************************/
+/**********************************************
+                    LOGO 
+**********************************************/
+
+#logo-jornal{
+    background-image: linear-gradient(#cc002a, #940320);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 0 0;
+}
+
+/**********************************************
+                    LOGO 
+**********************************************/
+/**********************************************
+                  Notícias 
+**********************************************/
+
+#noticia-1, #noticia-2, #noticia-3 {
+    display: flex;
+    padding: 0 0 0 8em;
+}
+
+.img-texto{
+    display: flex;
+}
+
+.img-texto p {
+    width: 45%;
+    align-self: center;
+    text-align: left;
+    padding: 0 0 0 1em;
+}
+
+#politica {
+    padding: 0 0 0 9em;
+}
+
+#entreterimento {
+    padding: 0 4em 0 0;
+}
+
+#tecnologia {
+    padding: 0 0 4em 0;
+}
+
+#noticias-quentes h2 {
+    border-bottom: 4px solid #cc002a;
+    width: 83%;
+}
+
+#politica h2 {
+    border-bottom: 4px solid #cc3c00;
+    width: 79%;
+}
+
+#esportes h2 {
+    border-bottom: 4px solid #90cc00;
+    width: 74%;
+}
+
+#entreterimento h2 {
+    border-bottom: 4px solid #cc0090;
+    width: 85%;
+}
+
+#economia h2 {
+    border-bottom: 4px solid #3c00cc;
+    width: 72%;
+}
+
+#tecnologia h2 {
+    border-bottom: 4px solid #00cca2;
+    width: 78%;
+}
+
+/**********************************************
+                  Notícias 
+**********************************************/
+/**********************************************
+                  Rodapé 
+**********************************************/
+
+footer{
+    background-image: linear-gradient(#cc002a, #940320);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0 2.3em 0 0;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em 0 0;
+}
+
+#logo-rodape {
+    padding: 1em 0 0 2em;
+}
+
+/**********************************************
+                  Rodapé 
+**********************************************/
+
+@media (max-width:1050px) {
+    #noticia-1, #noticia-2, #noticia-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #politica {
+        padding: 0;
+    }
+}
+
+@media (max-width:800px) {
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.mobile-mode li {
+        padding: 1em 0 0 0;
+    }
+
+    nav ul.mobile-mode form {
+        padding: 1em 0 0 0;
+    }
+
+    #noticia-1, #noticia-2, #noticia-3 {
+        padding: 0 0 0 4em;
+    }
+}
+
+@media (max-width:520px) {
+    #noticia-1, #noticia-2, #noticia-3 {
+        padding: 0 0 0 2em;
+    }
+}

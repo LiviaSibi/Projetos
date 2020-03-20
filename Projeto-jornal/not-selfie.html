@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+        <link rel="stylesheet" type="text/css" href="not-esp.css">
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Moda da selfie pulando a fogueira causa acidentes em festas juninas</h2>
+            <img src="img-jornal/selfie grande.jpg" title="Jovem passando na fogueira" alt="Foto de um jovem pulado sobre a fogueira">
+            <div class="text">
+                <p>Não são os balões que são perigosos em tempos de festas juninas. Uma nova moda nos eventos tem feito muita gente sair machucada: a mania de fazer selfie enquanto pula a fogueira. Janice das Neves, de 18 anos, teve parte da perna queimada de tanto repetir fotos dela mesma passando por cima do fogo, numa festa em Juiz de Fora, Minas Gerais.</p>
+
+                <p>“É que o meu sorriso nunca ficava bom, então eu sempre queria fazer de novo”, explicou ainda no hospital. Perguntada sobre o porquê de não pedir a um amigo para fazer sua foto pulando a fogueira, respondeu apenas que “não tem graça”.</p>
+
+                <p>Quando a selfie é em grupo, a coisa fica pior. Um grupo de festeiros de Olinda, em Pernambuco, foi hospitalizado com queimaduras de segundo grau depois de pularem o fogo de mãos dadas, com uma pessoa na ponta fazendo a foto. O salto foi pequeno e todos se acidentaram. Colocaram a culpa na fogueira: era extensa demais.</p>
+            </div>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>

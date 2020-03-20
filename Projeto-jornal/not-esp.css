@@ -1,0 +1,45 @@
+main {
+    text-align: center;
+    padding: 4.7em 0 9em 0;
+}
+
+main p {
+    text-align: left;
+    text-indent: 3em;
+}
+
+h2 {
+    padding: 2em 0 2em 0;
+    font-size: 2.3em;
+}
+
+.text {
+    padding: 2em 0 2em 27em;
+    width: 75%;
+}
+
+@media (max-width:1350px) {
+    .text {
+        padding: 2em 0 2em 19em;
+    }
+}
+
+@media (max-width:1000px) {
+    .text {
+        padding: 2em 0 2em 10em;
+    }
+}
+
+@media (max-width:800px) {
+    .text {
+        padding: 2em 0 1em 5em;
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}

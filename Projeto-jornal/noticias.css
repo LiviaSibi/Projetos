@@ -1,0 +1,149 @@
+main {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline #cc002a;
+}
+
+section > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+#not-1, #not-2, #not-3, #not-4 {
+    display: flex;
+    text-align: left;
+}
+
+#not-4 {
+    padding: 0 0 3em 0;
+}
+
+#not-terra, #not-acidente, #not-selfie, #not-nuvem {
+    padding: 1em 0 0 15em;
+}
+
+#not-terra p, #not-moto p, #not-selfie p, #not-cinto p, #not-uniforme p, #not-egito p {
+    width: 65%;
+}
+
+#not-nuvem p {
+    width: 70%;
+}
+
+#not-acidente p {
+    width: 65%;
+}
+
+#not-uniforme {
+    padding: 1em 0 0 12em;
+}
+
+#not-egito {
+    padding: 1em 0 0 12em; 
+}
+
+#not-moto {
+    padding: 1em 0 0 0;
+}
+
+#not-acidente {
+    width: 80%;
+}
+
+#not-cinto {
+    padding: 1em 0 0 0;
+}
+
+#not-nuvem {
+    width: 45%;
+}
+
+#not-selfie {
+    width: 62%;
+}
+
+.data-hora {
+    font-size: 0.8em;
+}
+
+@media (max-width:1600px) {
+    #not-moto {
+        padding: 1em 0 0 7em;
+    }
+
+    #not-cinto {
+        padding: 1em 0 0 7em;
+    }
+
+    #not-uniforme {
+        padding: 1em 0 0 9em;
+    }
+
+    #not-nuvem p {
+        width: 90%;
+    }
+}
+
+@media (max-width:1400px) {
+    #not-terra, #not-acidente, #not-selfie, #not-nuvem {
+        padding: 1em 0 0 10em;
+    }
+}
+
+@media(max-width: 1200px){
+    #not-terra, #not-acidente, #not-selfie, #not-nuvem {
+        padding: 1em 0 0 5em;
+    }
+
+    #not-moto {
+        padding: 1em 0 0 9em;
+    }
+
+    #not-cinto {
+        padding: 1em 0 0 9em;
+    }
+
+    #not-acidente p, #not-terra p, #not-selfie p {
+        width: 90%;
+    }
+}
+
+@media (max-width:1100px) {
+    #not-terra, #not-acidente, #not-selfie, #not-nuvem {
+        padding: 1em 0 0 2em;
+    }
+
+    #not-moto {
+        padding: 1em 0 0 5em;
+    }
+
+    #not-cinto {
+        padding: 1em 0 0 5em;
+    }
+
+    #not-egito{
+        padding: 1em 0 0 5em;
+    }
+
+    #not-acidente p, #not-terra p, #not-selfie p {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1060px){
+    #not-1, #not-2, #not-3, #not-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #not-terra, #not-acidente, #not-uniforme, #not-selfie, #not-moto, #not-cinto, #not-nuvem, #not-egito {
+        padding: 2em 0 0 5em;
+    }
+
+    #not-nuvem {
+        width: 90%;
+    }
+}

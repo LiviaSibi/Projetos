@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Rolê Top</title>
+        <link href="img/logo.png" rel="icon" type="image/x-icon"/>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Rolê Top</h1>
+            <div class="section-container">
+                <div id="logo-area">
+                    <img src="img/logo.png" title="Logo" alt="Logotipo do Galpão Rolê Top">
+                </div>
+                <nav>
+                    <ul>
+                        <li id="bt-mobile-menu">
+                            <!-- HTML para colocar os ícones do FA -->
+                            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index.html" class="active">Home</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="sobre.html">Sobre</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="eventos.html">Eventos</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="contato.html">Contato</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="banner">
+                <img src="img/banner.png">
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <div class="sobre">
+                    <img src="img-exp/galpão-sobre.png" title="Imagem do Galpão" alt="Foto do Galpão">
+                        <div class="sobre-2">
+                        <p><img src="img-exp/regua.png">6000 m²</p>
+                        <p><img src="img-exp/pessoas 2.png">400 pessoas</p>
+                    </div>
+                    <div class="sobre-2">                   
+                        <p><img src="img-exp/cadeira.png">200 cadeira e 120 mesas</p>
+                        <p><img src="img-exp/sifrão.png">R$ 10000</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="eventos">
+                <h2>Eventos</h2>
+                <div class="eventos">
+                    <p><img src="img-exp/icone casamento.png">Casamento</p>
+                    <p><img src="img-exp/15 2,0.png">Debutante</p>
+                    <p><img src="img-exp/festa.png">Festas/Aniversario</p>
+                </div>
+                <div class="eventos">
+                    <p><img src="img-exp/icone formatura.png">Formatura</p>
+                    <p><img src="img-exp/icone corporativo.png">Corporativo</p>
+                    <p><img src="img-exp/ticket.png">Show</p>
+                </div>
+            </section>
+
+            <section id="alugue-aqui">
+                <a href="login.html">
+                <img src="img-exp/logo cortado.png">
+                <p><strong>Alugue aqui</strong></p>
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <address>
+                <div class="footer-2">
+                    Avenida de Limeira, 539 - Campos Elíseos - SP
+                    <br>
+                    roletop@email.com
+                    <br>
+                    <div class="footer">
+                    Facebook: galpão_rolêtop
+                    <br>
+                    Telefone:4002-8922
+                    </div>
+                </div>
+            </address>
+            <a href="#">Voltar para o topo!</a>
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+            
+        </script>
+    </body>
+</html>

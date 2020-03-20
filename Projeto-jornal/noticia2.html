@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Filmes e Séries </title>
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <link href="img-entrete/icone-logo.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img-entrete/Logo.png"></a>
+        </div>
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active"> Notícias </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Política </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Esportes </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html"> Entretenimento </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Economia </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Tecnologia </a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="mainnot">
+        <div id="noticias">
+            <h1> Filmes e Séries </h1>
+
+            <h2>Marighella: Filme polêmico de Wagner Moura ganha teaser impactante</h2>
+
+            <img src="img-entrete/Filmes e series 2.png" title="Filmes e Séries 2" alt="Foto de Seu Jorge">
+            <p class="data">20/08/2019 15h00</p>
+            <p>
+                A Paris Filmes divulgou o primeiro teaser de “Marighella”, dirigido por Wagner Moura. E é uma porrada.
+                As cenas escolhidas, acompanhadas por narração do protagonista e elogios da crítica internacional – tem
+                83% de aprovação no Rotten Tomatoes – , apresentam o filme de forma impactante, entre tiros, explosões e
+                mortes. O tom é de confronto e vingança. Não só na reconstituição dos embates da ditadura militar, mas
+                também no timing do lançamento.
+            </p>
+            <p>
+                A obra é uma cinebiografia do escritor e guerrilheiro Carlos Marighella, morto em 1969 pela ditadura
+                militar. Considerado herói pela esquerda e terrorista pela direita – lider da ALN, o grupo mais
+                sanguinário da época, à exceção do próprio Estado – , o personagem é polêmico.
+            </p>
+            <p>
+                Na época da exibição do filme no Festival de Berlim, em fevereiro, o longa recebeu críticas do presidente
+                Jair Bolsonaro e foi alvo de trolls da internet, que o atacaram em sites de cinema americanos, embora o
+                filme ainda permaneça inédito em circuito comercial.
+            </p>
+            <p>
+                Para aumentar a controvérsia, o cantor Seu Jorge (“Cidade de Deus”) foi escalado no papel-título, fato
+                que deverá ganhar ainda mais repercussão graças à escolha da data de lançamento.
+            </p>
+            <p>
+                O filme vai chegar aos cinemas no Brasil em 20 de novembro, quando se comemora o Dia da Consciência
+                Negra.
+            </p>
+            <p>
+                O político baiano era filho de um italiano branco e nasceu “mulato” claro, como ensinavam as antigas
+                aulas de geografia da época da ditadura, ou “pardo”, como prefere a polícia e o IBGE. Entretanto, além
+                de comunista, Marighella surge retinto na ficção. Seria, portanto, caso pensado para aumentar a
+                polarização em torno do filme.
+
+            </p>
+            <p>
+                A contestação deste e outros fatos deve render muitas discussões, mas uma verdade não é relativa: o
+                teaser é muito bom.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <img id="logo-rodape" src="img-entrete/Logo.png">
+        <div class="rodape">
+            <address>
+                <ul>
+                    <li><img src="img-entrete/Facebook.png"></li>
+                    <li><img src="img-entrete/Instagram.png"></li>
+                    <li><img src="img-entrete/Twitter.png"></li>
+                </ul>
+            </address>
+            <p>Direitos autorais reservados</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }                
+    </script>
+
+
+</body>
+
+</html>

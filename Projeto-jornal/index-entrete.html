@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Entreterimento </title>
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    <link href="img-entrete/icone-logo.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+                <a href="index.html"><img src="img-entrete/Logo.png"></a>
+        </div>
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active"> Notícias </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Política </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Esportes </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html"> Entretenimento </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Economia </a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=""> Tecnologia </a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <h1> Entretenimento </h1>
+
+        <h2> Filmes e Séries </h2>
+
+        <section class="manchetes">
+            <div id="manchete1">
+                <a href="noticia1.html">
+                    <img src="img-entrete/Filmes e series 1.png" title="Filmes e Séries 1" alt="Personagens da série Breaking Bad">
+                    <p>Ator de "Breaking Bad" afirma que filme derivado da série já foi gravado</p>
+                    <p class="data">22/08/2019 14h53</p>
+                </a>
+            </div>
+            <div id="manchete2">
+                <a href="noticia2.html">
+                    <img src="img-entrete/Filmes e series 2.png" title="Filmes e Séries 2" alt="Foto de Seu Jorge">
+                    <p>Marighella: Filme polêmico de Wagner Moura ganha teaser impactante</p>
+                    <p class="data">20/08/2019 15h00</p>
+                </a>
+            </div>
+        </section>
+
+        <h2> Música </h2>
+
+        <section class="manchetes">
+            <div id="manchete3">
+                <a href="noticia3.html">
+                    <img src="img-entrete/Musica 1.png" title="Música 1" alt="Foto de Bono Vox">
+                    <p>Acidente com Bono foi vingança de Trakinas !</p>
+                    <p class="data">27/08/2019 00h00</p>
+                </a>
+            </div>
+            <div id="manchete4">
+                <a href="noticia4.html">
+                    <img src="img-entrete/Musica 2.png" title="Música 2" alt="Foto de Luan Santana">
+                    <p>Shallow Now: Luan achou refrão brega e diz que sugeriu "juntos até o final"</p>
+                    <p class="data">23/08/2019 12h55</p>
+                </a>
+            </div>
+        </section>
+
+        <h2> Teatro </h2>
+
+        <section class="manchetes">
+            <div id="manchete5">
+                <a href="noticia5.html">
+                    <img src="img-entrete/Teatro 1.png" title="Teatro 1" alt="Foto de Tom Zé">
+                    <p>"Cultura é importente, pelo amor de Deus!", diz Tom Zé, que lança novo show</p>
+                    <p class="data">22/08/2019 09h11</p>
+                </a>
+            </div>
+            <div id="manchete6">
+                <a href="noticia6.html">
+                    <img src="img-entrete/Teatro 2.png" title="Teatro 2" alt="Foto do grupo Balão Mágico">
+                    <p>Turma do Balão Mágico terá trajetória contada em musical</p>
+                    <p class="data">21/08/2019 10h34</p>
+                </a>
+            </div>
+        </section>
+
+        <h2> Televisão </h2>
+
+        <section class="manchetes">
+            <div id="manchete7">
+                <a href="noticia7.html">
+                    <img src="img-entrete/Televisão 1.png" title="Televisão 1" alt="Imagem do seriado Chaves">
+                    <p>SBT transmitirá episódio especial de "Chaves" para comemorar os 35 anos da série na emissora</p>
+                    <p class="data">23/08/2019 08h36</p>
+                </a>
+            </div>
+            <div id="manchete8">
+                <a href="noticia8.html">
+                    <img src="img-entrete/Televisão 2.png" title="Televisão 2" alt="Foto de Ághata Moreira">
+                    <p>Ághata Moreira não espera redenção de Josiane: "Quero ser vilã até o final"</p>
+                    <p class="data">23/08/2019 08h57</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img id="logo-rodape" src="img-entrete/Logo.png">
+        <div class="rodape">
+            <address>
+                <ul>
+                    <li><img src="img-entrete/Facebook.png"></li>
+                    <li><img src="img-entrete/Instagram.png"></li>
+                    <li><img src="img-entrete/Twitter.png"></li>
+                </ul>
+            </address>
+            <p>Direitos autorais reservados</p>
+        </div>
+
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-times");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }                
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+        <link rel="stylesheet" type="text/css" href="not-esp.css">
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Egito faz a egípcia com o Brasil</h2>
+            <img src="img-jornal/egito grande.jpg" title="Pirâmides do Egito" alt="Foto do Egito">
+            <div class="text">
+                <p>O Egito se negou a receber o chanceler brasileiro depois de declarações do presidente eleito, Jair Bolsonaro. Ele defende que a capital capital de Israel seja transferida de Telaviv para Jerusalém. A ONU não reconhece o novo local. Oficialmente o compromisso foi adiado por problemas de agenda.</p>
+
+                <p>A esperança do governo Bolsonaro é que o Egito se acalme. Principalmente quando perceber que temos uma agenda social do tempo das múmias.</p>
+
+                <p>O Brasil tem fortes relações comerciais com o Egito. Brasileiros são frequentemente vítimas de investimentos em pirâmides.</p>
+            </div>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>

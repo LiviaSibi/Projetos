@@ -1,0 +1,127 @@
+body {
+    background-color: #93005f;
+}
+
+main {
+    align-self: center;
+    padding: 0 0 0 5em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h2 {
+    padding: 1em 0 0 0;
+}
+
+form * {
+    margin: 6px 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+form input#data {
+    height: 27px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#hora {
+    height: 25px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#tipo-evento {
+    height: 28px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#evento {
+    height: 28px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#pf-pj {
+    height: 28px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#cpf {
+    width: 40%;
+    height: 25px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+.box-servicos {
+    background-color: #fff;
+    width: 50%;
+    padding: 2px 4px;
+}
+
+.box-servicos label {
+    border-bottom: 2px solid #000;
+}
+
+form input#pagamento {
+    width: 45%;
+    height: 25px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input#servicos-condicoes {
+    margin: 1em 1em 0 0;
+    text-align: center;
+}
+
+form p {
+    font-size: 1.3em;
+}
+
+form a {
+    color: rgb(39, 39, 202);
+}
+
+form input#total {
+    height: 28px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input[type="submit"] {
+    background-color: #ffc600;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 0 2em;
+    height: 2em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form input[type="submit"]:hover {
+    background-color: #7d0093;
+    color: #ffcc00;
+    border: 2px solid #7d0093;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-weight: bolder;
+}

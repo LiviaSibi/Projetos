@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+        <link rel="stylesheet" type="text/css" href="not-esp.css">
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Novo acidente surpreende e mata 33 em Roraima</h2>
+            <img src="img-jornal/acidente grande.jpg" title="Penitenciária de Roraima" alt="Foto da penitenciária de Roraima">
+            <div class="text">
+                <p>Um acidente totalmente impossível de ser previsto aconteceu na madrugada desta sexta-feira no estado de Roraima e deixou 33 mortos. Foi na Penitenciária Agrícola de Monte Cristo, a maior do estado.</p>
+
+                <p>O acidente aconteceu após outro acidente, na madrugada de segunda-feira, tirar a vida de 56 detentos em um presídio de Manaus, capital do Amazonas. O presidente Michel Temer foi quem comentou o ocorrido em Manaus e afirmou se tratar de um acidente.</p>
+
+                <p>O governador do Amazonas também tranquilizou a população na terça-feira. Segundo ele, ninguém deveria se preocupar porque “não havia nenhum santo” no presídio.</p>
+
+                <p>Deus teria confirmado a informação segundo o governo federal. O ministro da Justiça Alexandre de Moraes, que além de falar diretamente com o Todo Poderoso consegue prever ações secretas da Operação Lava Jato antes delas acontecerem, disse que Deus não havia registrado a chegada de nenhum dos detentos no Céu.</p>
+
+                <p>“Ainda bem que sabemos que tudo isso é acidente, não é?”, diz a irmã de um dos milhares de presos do sistema carcerário do Norte do país. “Vou pedir para meu marido, que está cumprindo pena por não ter dinheiro para pagar pensão, para usar cinto de segurança de agora em diante.”</p>
+            </div>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>

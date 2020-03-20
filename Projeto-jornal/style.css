@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gandhi Sans';
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Cambria';
+    text-align: center;
+    font-size: 30px;
+    padding: 3em 0 0 0;
+    text-decoration: underline #CC0090;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 0px 8px 0px;
+}
+
+.data {
+    font-size: 14px;
+}
+
+
+/****************************CABEÇALHO*******************************/
+
+#logo {
+    background-image: linear-gradient(#CC0090, #660048);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0 2px 0;
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+#menu nav {
+    border-bottom: 2px solid black;
+}
+
+#menu nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 1em 0 1em 0;
+}
+
+#menu nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;    
+}
+
+form input#pesquisa {
+    width: 85%;
+    height: 27px;
+    border: 2px solid black;
+    text-align: left;
+    padding: 0 2px;
+}
+
+/****************************CABEÇALHO*******************************/
+
+
+/****************************MAIN*******************************/
+
+.manchetes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 40px;
+}
+
+.manchetes div {
+    padding: 10px 0;
+    width: 500px;
+}
+
+.manchetes div a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+    width: 700px;
+}
+
+#mainnot {
+    display: flex;
+    justify-content: center;
+}
+
+#noticias img {
+    width: 100%;
+    margin: 1em 0;
+}
+
+#noticias .data {
+    padding-bottom: 0.5em;
+}
+
+#noticias p {
+    padding: 0.5em 0;
+}
+
+/****************************MAIN*******************************/
+
+
+/****************************RODAPÉ*******************************/
+
+
+footer {
+    background-image: linear-gradient(#CC0090, #660048);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    padding: 0 2.7em 0 0;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************RODAPÉ*******************************/
+@media (max-width: 1100px) {
+
+    .manchetes div, .manchetes img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    #noticias {
+        padding: 0 1em 2em 1em;
+    }
+}
+
+@media (max-width: 650px) {
+
+    #menu nav #bt-mobile-menu {
+        display: flex;
+    }
+    
+    #menu nav .bt-common-menu {
+        display: none;
+        padding: 5px 0;
+    }
+    
+    #menu nav .bt-common-menu.active {
+        display: block;
+    }
+    
+    #menu nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    .manchetes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .manchetes div, .manchetes img {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .manchetes div, .manchetes img {
+        width: 100%;
+    }
+}

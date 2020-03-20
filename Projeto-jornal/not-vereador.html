@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+        <link rel="stylesheet" type="text/css" href="not-esp.css">
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Vereador quer tornar opcional o uso do cinto de segurança: 'suja a roupa'</h2>
+            <img src="img-jornal/vereador grande.png" title="Vereador João Madureira" alt="Foto do Vereador João Madureira discursando">
+            <div class="text">
+                <p>O vereador por Várzea Grande, região metropolitana de Cuiabá, João Madureira (PSC), anunciou em sessão extraordinária na quinta-feira (14), na Câmara Municipal, que pretende apresentar projeto de lei que torna opcional o uso de cinto de segurança para motoristas e passageiros no perímetro urbano. Para o parlamentar, o equipamento suja a roupa e a falta do uso do dispositivo gera muitas multas à população, "que já paga muitos impostos".</p>
+
+                <p>Conforme o Código de Trânsito Brasileiro (CTB), o uso do cinto de segurança é obrigatório para os motoristas e passageiros em todo o território nacional.</p>
+
+                <p>Na sessão na Câmara, o vereador defendeu a proibição do uso do cinto. Mas, em entrevista ao G1, Madureira defendeu a utilização como opcional e disse que trata-se de um "clamor do povo" e que pretende convocar audiências públicas para discutir o assunto. "O legislador propõe o projeto conforme a necessidade da população. Nesse caso, não foi diferente", disse.</p>
+
+                <p>O vereador criticou a obrigatoriedade da utilização do cinto de segurança. "Para mim, isso é ditadura", disse. Classificou como abusiva a quantidade de multas aplicadas por agentes de trânsito às pessoas que desobedecem a lei.</p>
+
+                <p>"O cidadão já tem que pagar a prestação do carro, pagar o IPVA e ainda tem que pagar multa? Não é justo, é um abuso", argumentou.</p>
+
+                <p>Como justificativa para apresentar o projeto de lei, ele citou a instalação dos radares - que foram implantados em Cuiabá, e não em Várzea Grande - como fator que pode dar mais segurança à população, sem a necessidade do cinto. "As velocidades máximas chegam a 40 km/h, a 60km/h. Com os radares diminuiu o número de acidentes", disse.</p>
+
+                <p>Além desses argumentos, Madureira também defendeu a não obrigatoriedade do cinto por uma questão de aparência. "Suja a roupa, e não sou eu que estou dizendo isso. Imagina um jaleco, uma roupa branca? Fica toda suja. As pessoas que vieram reclamar disso pra mim, não sou eu que estou dizendo", disse.</p>
+
+                <p>Madureira frisou que sabe que a legislação de trânsito é federal, mas que vai defender o projeto. "Não sou analfabeto, sou acadêmico de direito. Não iria propor algo sem saber que se trata de uma lei maior", declarou.</p>
+            </div>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>

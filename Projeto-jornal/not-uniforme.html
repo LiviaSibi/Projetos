@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+        <link rel="stylesheet" type="text/css" href="not-esp.css">
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Uniforme de agentes de trânsito de Doria faz velocidade cair porque motoristas param para rir</h2>
+            <img src="img-jornal/uniforme grande.jpg" title="Novo Uniforme de trânsito" alt="Imagem dos novos uniformes de trânsito">
+            <div class="text">
+                <p>O prefeito de São Paulo, João Doria, apresentou hoje os novos uniformes dos agentes de trânsito da Companhia de Engenharia de Tráfego (CET).</p>
+
+                <p>Segundo especialistas, a previsão é de que a mudança do uniforme cause um impacto imediato na redução das velocidades nas vias. A estimativa é de que cerca de 70% dos motoristas vão parar para rir do uniforme novo, o que causará uma redução na velocidade média do tráfego.</p>
+
+                <p>“Apesar de reconhecer que funcionará para diminuir as velocidades e consequentemente os acidentes, sou contra o novo uniforme pois temo que algum motorista possa ter um ataque de riso e perder a direção antes de conseguir parar o carro”, disse Wagner Neto, especialista em cores de uniformes de agentes de trânsito.</p>
+
+                <p>Logo após a inauguração dos novos uniformes, Doria soube do efeito colateral da redução de velocidade nas vias e pediu para jogarem fora os novos uniformes e fazerem um novo. ” De preferência um que faça os motoristas sentirem vontade de acelerar. Acelera São Paulo!”, teria dito o prefeito.</p>
+            </div>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>

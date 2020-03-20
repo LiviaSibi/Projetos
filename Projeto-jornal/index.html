@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barão Bona Jornal</title>
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+        <link href="img/icone-logo.png" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="style-bbj.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Barão Bona Jornal</h1>
+            <div id="logo-jornal">
+                <a href="index.html"><img src="img/logo.png" title="logo" alt="Logo do jornal BBJ"></a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="noticias.html" class="active">Notícias</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Política</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Esportes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="index-entrete.html">Entreterimento</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Economia</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="">Tecnologia</a></li>
+                    <form>
+                        <input id="pesquisa" type="text" placeholder="Buscar">
+                    </form>               
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                
+            <section id="noticia-1">
+                <section id="noticias-quentes">                    
+                    <h2>Notícias quentes</h2>
+                    <a href="not-terra.html"><h3>Cientistas encontram provas irrefutáveis de que a terra é plana</h3>
+                    <div class="img-texto">
+                        <img src="img/terra plana.png" title="Terra plana" alt="Imagem da terra plana"/>
+                        <p>Os terraplanistas tinham razão. A Nasa divulgou hoje o vendadeiro vídeo que prova que a terra é plana.</p>
+                    </div></a>
+
+                    <a href="not-uniforme.html"><h3>Uniforme de trânsito de Doria faz velocidade cair porque motoristas param para rir</h3>
+                    <div class="img-texto">
+                        <img src="img/uniforme transito.png" title="Novo uniforme de trânsito" alt="Imagem do novo uniforme de trânsito">
+                        <p>O prefeito de São Paulo, João Dória, apresentou hoje os novos uniformes dos agentes de trânsito da companhia de engenharia de trafego (CET).</p> 
+                    </div></a>                 
+                </section>
+
+                <section id="politica">
+                    <h2>Política</h2>
+                    <h3>Após fala de Macron, Bolsonaro proibe venda de pão francês em todo o 
+                        <br> território nacional</h3>
+                    <div class="img-texto">
+                        <img src="img/foto-1.png" title="Presidente francês e Bolsonaro" alt="Foto do presidente francês e Bolsonaro">
+                        <p>O presidente francês Emmanuel Macron disse que as recentes queimadas na Amazônia são assunto mundial e Bolsonaro e sua equipe criticam duramente o presidente francês.</p>
+                    </div>
+                    <h3>Gilmar Mendes manda soltar o cocô</h3>
+                    <div class="img-texto">
+                        <img src="img/foto.png" title="Gilmar Mendes" alt="Foto do ministro Gilmar Mendes">
+                        <p>O Ministro Gilmar Mendes concedeu um habeas caças e mandou liberar o cocô. Mendes entrou em conflito com o governo nas últimas semanas.</p>
+                    </div>
+                </section>
+            </section>
+
+            <section id="noticia-2">
+                <section id="esportes">
+                    <h2>Esportes</h2>
+                    <h3>Sem saber o que fazer na Copa, Gabriel Jesus começa a pintar a pequena 
+                        <br>área de verde e amarelo</h3>
+                    <div class="img-texto">
+                        <img src="img/gabriel jesus.png" title="Gabriel Jesus pintando" alt="Foto do Gabriel Jesus pintando em campo">
+                        <p>Gabriel Jesus ainda não se achou nesta Copa do Mundo. Sem saber o que fazer, trouxe um balde de tinta, uma brocha e começou a pintar a pequena área de verde e amarelo.</p>
+                    </div>
+                    <h3>Sem jogos na Copa, brasileiro tira o dia para apreciar foto de Paulinho 
+                        <br>fazendo gol</h3>
+                    <div class="img-texto">
+                        <img src="img/copa.png" title="Paulinho fazendo gol" alt="Foto do Paulinho fazendo gol">
+                        <p>Pego de surpresa pelo primeiro dia na Copa sem jogo em duas semanas, brasileiro aproveita para contemplar a obra de arte que é a foto de Eugênio Sávio do primeiro gol do Brasil contra a Sérvia.</p>
+                    </div>
+                </section>
+
+                <section id="entreterimento">
+                    <h2>Entreterimento</h2>
+                    <a href="noticia1.html">
+                    <h3>Ator de "Breaking Bad" revela que filme derivado da série já foi gravado</h3>
+                    <div class="img-texto">
+                        <img src="img/breaking bad.png" title="Breaking Bad" alt="Imagem da série Breaking Bad">
+                        <p>O ator Bob Odenkirk, que interpreta Saul Goodman na atração, revelou em entrevista ao site "Hollywood Reporter" que o filme que dará sequência à história já foi gravado.</p>
+                    </div></a>
+                    <a href="noticia3.html">
+                    <h3>Acidente com Bono foi vingança de Trakinas</h3>
+                    <div class="img-texto">
+                        <img src="img/bono.png" title="Bono" alt="Foto do bono">
+                        <p>A causa provável do acidente do último domingo envolvendo Bono foi ciúmes. A maior suspeita recai sobre seu rival Trakinas.</p>
+                    </div></a>
+                </section>
+            </section>
+            
+            <section id="noticia-3">
+                <section id="economia">
+                    <h2>Economia</h2>
+                    <h3>Homem ganha dinheiro investindo sem mestrado em Economia e 
+                        <br>será estudado</h3>
+                    <div class="img-texto">
+                        <img src="img/investimento.png" title="Velho com nota de 100" alt="Foto de um velhinho com uma nota de 100">
+                        <p>O advogado Ronaldo Albuquerque Silveira teve sua vida mudada após investir dinheiro por um aplicativo.</p>
+                    </div>
+                    <h3>BC corta juros em 0,75 e horóscopo de petista diz que hoje não é 
+                        <br>bom dia para falar de economia</h3>
+                    <div class="img-texto">
+                        <img src="img/juros.png" title="Juros" alt="Gráfico dos juros">
+                        <p>O Banco Central fez ontem o seu terceiro e maior corte de juros. A taxa foi reduzida em 0,75 pontos, chegando a 13% ao ano. O anúncio foi além da expectativa do mercado.</p>
+                    </div>
+                </section>
+                
+                <section id="tecnologia">
+                    <h2>Tecnologia</h2>
+                    <h3>SpaceX lança primeiros satélites para rede que vai prover internet do 
+                        <br>espaço</h3>
+                    <div class="img-texto">
+                        <img src="img/foguete.png" title="Lançamento do foguete" alt="Foto do lançamento do foguete">
+                        <p>Um foguete Falcon 9 da empresa decolou de Cabo Canaveral, na Flórida, com 60 satélites. Empresa tem Elon Musk, da Tesla, em seu comando.</p>
+                    </div>
+                    <h3>Volvo e Nvidia fazem parceria para desenvolver software para caminhões 
+                        <br>autônomos</h3>
+                    <div class="img-texto">
+                        <img src="img/volvo nvidia.png" title="Caminhão da Volvo e Nvidia" alt="Foto do caminhão da Volvo e Nvidia">
+                        <p>Colaboração será por meio de programa de processamento, percepção e localização de mapas. Volvo apresentou primeiro conceito de veículo autônomo no ano passado.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <img id="logo-rodape" src="img/logo.png">
+            <div class="rodape">
+                <address>
+                    <ul>
+                        <li><img src="img/facebook-icone.png"></li>
+                        <li><img src="img/instagram-icone.png"></li>
+                        <li><img src="img/twitter-icone.png"></li>
+                    </ul>
+                </address>
+                <p>Direitos autorais reservados</p> 
+            </div>          
+        </footer>
+
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }            
+        </script>
+    </body>
+</html>
